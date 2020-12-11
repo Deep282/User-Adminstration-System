@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Paaji 2', cursive;
+ 
+}
+
+.navbar-brand{
+
+    font-size: 1.6rem !important;
+    color: #565387 !important;
+}
+
+.navbar a{
+    font: 1.3rem !important;
+    text-transform: capitalize;
+}
+
+.navbar a:hover{
+  color: #3498db !important;
+}
+ 
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.brand-name{
+  color: #3498db;
+}
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 50px;
+}
+
+#btn_home{
+  border: 2px solid #3498db ;
+  border-radius: 10% ;
+}
+
+.header-img{
+  text-align: right;
+  /* box-shadow: 3px 3px 13px -5px rgba(0,0,0,0.5); */
+}
+
+#header .animated{
+animation: up-down 2s ease-in-out infinite alternate-reverse both;
+
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+
+@media (max-width: 768px){
+
+  #header{
+    margin-top: 20px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header .header-img img{
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 991px){
+
+  #header{
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header-img{
+      text-align: center;
+  }
+
+  #header .header-img img{
+    width: 60%;
+  }
+}
+
